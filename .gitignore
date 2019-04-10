@@ -1,0 +1,8 @@
+git_init.bat
+*.iml
+.gradle
+plugins
+tasks
+*.kdbx
+*.lock
+*.txt

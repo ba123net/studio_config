@@ -1,0 +1,57 @@
+<templateSet group="AndroidXML">
+  <template name="rl" value="&lt;RelativeLayout&#10;   android:layout_width=&quot;match_parent&quot;&#10;   android:layout_height=&quot;match_parent&quot;&gt;&#10;&lt;/RelativeLayout&gt;      " description="relative" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tv" value="&lt;TextView&#10;    android:id=&quot;@+id/textview&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;wrap_content&quot;&#10;    android:textSize=&quot;14dp&quot;&#10;    android:gravity=&quot;center&quot;&#10;    android:textColor=&quot;@color/&quot;/&gt;" description="Textview" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="ll" value="&lt;LinearLayout&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;match_parent&quot;&#10;    android:orientation=&quot;horizontal&quot;&gt;&#10;&lt;/LinearLayout&gt;" description="LinearLayout" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="im" value="&lt;ImageView&#10;        android:layout_width=&quot;match_parent&quot;&#10;        android:layout_height=&quot;1px&quot;&#10;        android:background=&quot;#a5a5a5&quot;/&gt;" description="ImageView" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="_cardview" value="&lt;android.support.v7.widget.CardView&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;match_parent&quot;&#10;    android:clickable=&quot;true&quot;&#10;    android:foreground=&quot;?android:attr/selectableItemBackground&quot;&gt;&#10;    &#10;&lt;/android.support.v7.widget.CardView&gt;" description="cardview" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="_listview" value="&lt;ListView&#10;    android:id=&quot;@+id/_listview&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;wrap_content&quot;&#10;    android:background=&quot;@color/bg_reg&quot;&#10;    android:cacheColorHint=&quot;@android:color/transparent&quot;&#10;    android:divider=&quot;#d7d7d7&quot;&#10;    android:dividerHeight=&quot;1px&quot;&#10;    android:listSelector=&quot;@android:color/transparent&quot;&#10;    android:scrollbars=&quot;none&quot;/&gt;" description="Listview" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="flbtn" value="&lt;android.support.design.widget.FloatingActionButton&#10;    android:id=&quot;@+id/fab&quot;&#10;    android:layout_width=&quot;80dp&quot;&#10;    android:layout_height=&quot;80dp&quot;&#10;    android:layout_gravity=&quot;bottom|end&quot;&#10;    android:layout_margin=&quot;@dimen/fab_margin&quot;&#10;    app:backgroundTint=&quot;#ff87ffeb&quot;&#10;    app:rippleColor=&quot;#33728dff&quot;&#10;    app:elevation=&quot;1px&quot;&#10;    app:pressedTranslationZ=&quot;1px&quot;&#10;    android:src=&quot;@android:drawable/ic_dialog_email&quot;/&gt;" description="FloatingActionButton" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="_textarrow" value="&lt;CustomImageTextArrow&#10;    android:id=&quot;@+id/arrow_&quot;&#10;    android:layout_marginTop=&quot;100dp&quot;&#10;    android:layout_width=&quot;300dp&quot;&#10;    android:layout_height=&quot;90dp&quot;&#10;    android:background=&quot;?android:attr/selectableItemBackground&quot;&#10;    app:maintextcolor=&quot;#ff0000&quot;&#10;    app:maintext=&quot;TTest&quot;&#10;    app:maintextsize=&quot;20sp&quot;&#10;    app:maintextmargleft=&quot;50dp&quot;&#10;    app:othertextcolor=&quot;#ff9000&quot;&#10;    app:othertext=&quot;other&quot;&#10;    app:othertextsize=&quot;16sp&quot;&#10;    app:othertextmargright=&quot;50dp&quot;&#10;    app:leftimgwidth=&quot;10dp&quot;&#10;    app:leftimgheight=&quot;10dp&quot;&#10;    app:leftimagemargleft=&quot;10dp&quot;&#10;    app:leftimgsrc=&quot;@mipmap/ic_launcher&quot;&#10;    app:rightimgshow=&quot;true&quot;&#10;    app:bottom_line_color=&quot;#0000ff&quot;&#10;    app:bottom_line_margleft=&quot;30dp&quot;&#10;    app:bottom_line_height=&quot;1px&quot;&#10;    &gt;" description="CustomImageTextArrow" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="_texttop" value="&lt;CustomImageTextTop&#10;    android:id=&quot;@+id/arrow_&quot;&#10;    android:layout_marginTop=&quot;400dp&quot;&#10;    android:layout_width=&quot;200dp&quot;&#10;    android:layout_height=&quot;48dp&quot;&#10;    app:top_textcolor=&quot;#ff0000&quot;&#10;    app:top_text=&quot;TTest&quot;&#10;    app:top_textsize=&quot;10sp&quot;&#10;    app:top_imgwidth=&quot;22dp&quot;&#10;    app:top_imgheight=&quot;22dp&quot;&#10;    app:top_imagemargtop=&quot;1dp&quot;&#10;    app:top_imgsrc=&quot;@mipmap/ic_launcher&quot;&#10;    android:background=&quot;?android:attr/selectableItemBackground&quot;&#10;    /&gt;" description="CustomImageTextTop" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="card" value="    &lt;android.support.v7.widget.CardView&#10;        android:layout_width=&quot;match_parent&quot;&#10;        android:layout_height=&quot;wrap_content&quot;&gt;&#10;        &#10;        &#10;    &lt;/android.support.v7.widget.CardView&gt;&#10;    $END$" description="cardview" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="line" value="&lt;ImageView style=&quot;@style/grey_line&quot;/&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+</templateSet>

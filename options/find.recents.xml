@@ -1,0 +1,44 @@
+<application>
+  <component name="FindRecents">
+    <findStrings>
+      <find>sendDa</find>
+      <find>06</find>
+      <find>checkDevice</find>
+      <find>writeSignal(BluetoothDriverCMD.end);</find>
+      <find>isExit</find>
+      <find>data_success_all</find>
+      <find>writeSingle</find>
+      <find>isEnd</find>
+      <find>checkde</find>
+      <find>showCheckDeviceDialog</find>
+      <find>Upda</find>
+      <find>check</find>
+      <find>saveP</find>
+      <find>sendda</find>
+      <find>use</find>
+      <find>disconnectFlag</find>
+      <find>无法连接</find>
+      <find>successData</find>
+      <find>success</find>
+      <find>getLeft</find>
+      <find>editTextCompname</find>
+      <find>connect</find>
+      <find>showWaitOpenDeviceDialog</find>
+      <find>onResume</find>
+      <find>startActivity</find>
+      <find>goTreatmentActivity</find>
+      <find>checkUs</find>
+      <find>checkUserHistory</find>
+      <find>callback_getWXUser</find>
+      <find>showAddUser</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>24dp</replace>
+      <replace>map.put(&quot;</replace>
+      <replace>&quot;,&quot;</replace>
+      <replace>&quot;);</replace>
+      <replace>map.put</replace>
+      <replace />
+    </replaceStrings>
+  </component>
+</application>

@@ -1,0 +1,157 @@
+<templateSet group="MyCustomJAVA">
+  <template name="main" value="public static void main(String[] args){&#10;    $END$&#10;}" description="main" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="pso" value="public static void $END$(){&#10;&#10;}" description="public static void F" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="try" value="try {&#10;    $END$ &#10;}catch (Exception e){&#10;        &#10;}" description="try-catch" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="for" value="for ($Type$ _$Type$ : $Ver$) {&#10;    $END$&#10;}" description="for each" toReformat="false" toShortenFQNames="true">
+    <variable name="Type" expression="arrayVariable()" defaultValue="String" alwaysStopAt="true" />
+    <variable name="Ver" expression="iterableVariable()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="if" value="if ($END$){&#10;    &#10;}" description="if(){}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="ifesle" value="if($END$){&#10;&#10;}else{&#10;&#10;}" description="if(){}else{}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="switch" value="switch ($END$){&#10;    case:&#10;    return;&#10;    case:&#10;    return;&#10;    case:&#10;    return;&#10;}" description="switch ()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="array" value="ArrayList&lt;String&gt; array$END$=new ArrayList&lt;String&gt;();" description="ArrayList&lt;String&gt; array" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="newarray" value="ArrayList&lt;$type$&gt; array$name$=new ArrayList&lt;$type$&gt;();$END$" description="new ArrayList&lt;String&gt;();" toReformat="false" toShortenFQNames="true">
+    <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="newhash" value="HashMap&lt;$a$,$b$&gt; map$name$=new HashMap&lt;$a$,$b$&gt;();$END$" description="new HashMap&lt;String,Object&gt;();" toReformat="false" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="thread" value="Thread $name$=new Thread(new Runnable() {&#10;    @Override&#10;    public void run() {&#10;        $END$&#10;    }&#10;});" description="newThread" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="sleep" value="try {&#10;    Thread.sleep($time$00);&#10;}catch (Exception e){&#10;&#10;}&#10;$END$" description="sleep_thread" toReformat="false" toShortenFQNames="true">
+    <variable name="time" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="run" value="new Thread(new Runnable() {&#10;    @Override&#10;    public void run() {&#10;        $END$&#10;    }&#10;}).start();" description="thread_run" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="newStringBuff" value="StringBuffer strBuffer$name$=new StringBuffer();$END$" description="newStringBuff" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="voidf" value="private void $fun$(){&#10;    &#10;}" description="private void" toReformat="false" toShortenFQNames="true">
+    <variable name="fun" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="prv" value="private $Type$ m$Type$;" description="private Type" toReformat="false" toShortenFQNames="true">
+    <variable name="Type" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="prf" value="private $returnType$ $fun$(){&#10;    &#10;}" description="private Object fun()" toReformat="false" toShortenFQNames="true">
+    <variable name="returnType" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="fun" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="pskey" value="public static final String $key$ = &quot;$key$&quot;;" description="public static final Stirng" toReformat="false" toShortenFQNames="true">
+    <variable name="key" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="req" value="public static final String Key_$fun$_response = &quot;Key_$fun$_response&quot;;&#10;public static final String Msg_$fun$ = &quot;Msg_$fun$&quot;;&#10;public static void $fun$(final String name){&#10;    Runnable _Runnable=new Runnable() {&#10;        @Override&#10;        public void run() {&#10;            HandlerUtil.HandlerData&lt;$type$&gt; handlerData=new HandlerUtil.HandlerData&lt;$type$&gt;();&#10;            try {&#10;                &#10;                handlerData.isSuccess=true;&#10;            } catch (Exception e) {&#10;                Constants.parseException(e);&#10;            }&#10;            MemCacheUtil.getMemCacheUtil().putData(Key_$fun$_response,handlerData);&#10;            HandlerUtil.sendRequest(Msg_$fun$);&#10;        }&#10;    };&#10;    BackgroundThreadUtil.execute(_Runnable);&#10;}" description="custom req" toReformat="false" toShortenFQNames="true">
+    <variable name="fun" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="getMem" value="HandlerUtil.HandlerData&lt;$data$&gt; _$data$= (HandlerUtil.HandlerData&lt;$data$&gt;)&#10;        MemCacheUtil.getMemCacheUtil().getData(UserRequest.Key_$key$);$END$" description="getMem" toReformat="false" toShortenFQNames="true">
+    <variable name="data" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="key" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="newrun" value="private Runnable $name$Runnable=new Runnable() {&#10;    @Override&#10;    public void run() {&#10;        &#10;    }&#10;};" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="fori" value="for(int i=0;i&lt;$size$;i++){&#10;    $END$&#10;}" description="for(int i)" toReformat="false" toShortenFQNames="true">
+    <variable name="size" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="funpri" value="/***/&#10;private void $funname$(){&#10;    $END$&#10;}" description="private void fun(){}" toReformat="false" toShortenFQNames="true">
+    <variable name="funname" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="funpub" value="/***/&#10;public void $funname$(){&#10;    $END$&#10;}" description="public void fun(){}" toReformat="false" toShortenFQNames="true">
+    <variable name="funname" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="m" value="m$V$" description="m" toReformat="false" toShortenFQNames="true">
+    <variable name="V" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="_" value="_$V$" description="_" toReformat="false" toShortenFQNames="true">
+    <variable name="V" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

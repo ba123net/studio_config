@@ -1,0 +1,86 @@
+<templateSet group="MyCustomAndroid">
+  <template name="logw" value="LogUtil.printLogW(&quot;$className$&quot;,$msg$);$END$" description="Log.w" toReformat="false" toShortenFQNames="true">
+    <variable name="className" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="msg" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="fdv" value="($cast$) findViewById(R.id.$resId$);" description="($cast$) findViewById(R.id.$resId$);" toReformat="false" toShortenFQNames="true">
+    <variable name="cast" expression="expectedType()" defaultValue="" alwaysStopAt="true" />
+    <variable name="resId" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="loge" value="LogUtil.printLogE(&quot;$className$&quot;,$msg$);$END$" description="LogUtil.printLogE" toReformat="false" toShortenFQNames="true">
+    <variable name="className" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="msg" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="dialog" value="BaseDialogUtil.showMessageAlertDialog(this, &quot;title&quot;,&quot;message&quot;,&#10;    &quot;posbutton&quot;, &quot;negbutton&quot;, false, new DialogInterface.OnClickListener() {&#10;            @Override&#10;            public void onClick(DialogInterface dialog, int which) {&#10;                if (which==DialogInterface.BUTTON_POSITIVE){&#10;                    //ok&#10;                }else if (which==DialogInterface.BUTTON_NEGATIVE){&#10;                    //cancel&#10;                }&#10;            }&#10;        });" description="showDialog" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="layout" value="$Type$ _$Type$ =($Type$)LayoutInflater.from(this).inflate(R.layout.$id$,null);&#10;$END$" description="inflate" toReformat="false" toShortenFQNames="true">
+    <variable name="Type" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="super" value="public $classname$(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {&#10;    super(context, attrs, defStyleAttr, defStyleRes);&#10;    init(context,attrs);&#10;}&#10;&#10;public $classname$(Context context, AttributeSet attrs, int defStyleAttr) {&#10;    super(context, attrs, defStyleAttr);&#10;    init(context, attrs);&#10;}&#10;&#10;public $classname$(Context context, AttributeSet attrs) {&#10;    super(context, attrs);&#10;    init(context, attrs);&#10;}&#10;&#10;public $classname$(Context context) {&#10;    super(context);&#10;    init(context,null);&#10;}&#10;&#10;private void init(Context context,AttributeSet attrs){&#10;    &#10;}" description="CustomView" toReformat="false" toShortenFQNames="true">
+    <variable name="classname" expression="className()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="showtoast" value="LogUtil.showToast(&quot;$TEXT$&quot;);&#10;$END$" description="LogUtil.showToast(&quot;&quot;);" toReformat="false" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="click" value="private View.OnClickListener onClickListener=new View.OnClickListener() {&#10;    @Override&#10;    public void onClick(View v) {&#10;        &#10;    }&#10;};" description="Onclick" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="setclick" value="setOnClickListener(onClickListener);" description="setOnClickListener(onClickListener);" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="regcall" value="private HandlerUtil.HandlerCallback callBack$name$;&#10;public static final String key_msg_$name$=&quot;key_msg_$name$&quot;;&#10;private void regCallBack$name$(){&#10;    callBack$name$= HandlerUtil.regCallback(key_msg_$name$,new Runnable() {&#10;        @Override&#10;        public void run() {&#10;            //&#10;            $END$&#10;        }&#10;    });&#10;}&#10;private void removeCallBack$name$(){&#10;    if (callBack$name$!=null){&#10;        HandlerUtil.removeCallback(callBack$name$);&#10;    }&#10;}" description="regcallback" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="exerun" value="BackgroundThreadUtil.execute(new Runnable() {&#10;    @Override&#10;    public void run() {&#10;        final BaseHttpBody&lt;$CLASS$&gt; body= AppHttpHelp.postJson(&quot;&quot;,$OBJ$,$CLASS$.class);&#10;        if (AppHttpHelp.succHttpBody(body)){&#10;            if (body.data.suc){&#10;                $END$&#10;                return;&#10;            }&#10;        }&#10;        LogUtil.showToast(&quot;操作失败&quot;);&#10;    }&#10;});" description="BackgroundThreadUtil.execute" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OBJ" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="exbase" value="extends BaseHttpBody {&#10;    public $Type$ data;&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="Type" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="checkPermiss" value="PermisionUtil.checkLocal(MainActivity.this, new PermisionUtil.PermisionCallBack() {&#10;    @Override&#10;    public void success() {&#10;&#10;    }&#10;&#10;    @Override&#10;    public void fail() {&#10;&#10;    }&#10;});" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="bg" value="android:background=&quot;?android:attr/selectableItemBackground&quot;" description="android:background" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+</templateSet>

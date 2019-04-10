@@ -1,0 +1,10 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping ext="aar" type="ARCHIVE" />
+      <mapping ext="klib" type="ARCHIVE" />
+      <mapping pattern="city" type="PLAIN_TEXT" />
+      <mapping pattern="attrs" type="XML" />
+    </extensionMap>
+  </component>
+</application>
